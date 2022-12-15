@@ -1,8 +1,8 @@
-import path from 'path';
+const path = require('path');
 
-export default {
+module.exports = (_option, _ctx) => ({
 	enhanceAppFiles: [
 		path.resolve(__dirname, 'enhanceAppFile.js')
 	],
 	globalUIComponents: 'UsageCount',
-}
+})
